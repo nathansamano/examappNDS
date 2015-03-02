@@ -33,7 +33,7 @@
     <title>Hello Cordova w/ Bootstrap 101</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--link href="css/bootstrap.min.css" rel="stylesheet"-->
 
 	  <!-- Custom styles for this template -->
     <link href="css/starter-template.css" rel="stylesheet">
@@ -86,6 +86,9 @@
 	    </div>
 
 	  </div><!-- /.container -->
+
+    <!-- Bootstrap & Cordova core JavaScript
+    ================================================== -->
 
 	  <!-- Placed at the end of the document so the pages load faster -->
     <script type="text/javascript" src="cordova.js"></script>
