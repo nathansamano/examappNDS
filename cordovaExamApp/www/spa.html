@@ -31,65 +31,6 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- My JavaScript -->
-    <script src="js/fillin.js"></script>
-
-  </head>
-
-  <body ng-controller="userController">
-
-    <nav class="navbar navbar-inverse navbar-fixed-top">                              
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Quiz App</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-
-    <div class="container">
-    
-      <div class="starter-template">
-
-        <!-- Test Button -->
-        <button type="button" class="btn btn-lg btn-primary">Click Here to Start Quiz</button>
-
-        <h1>Fill in the Blank</h1>
-
-        <!-- Question with user answer box -->
-        <div ng-app="" ng-controller="personController"><br>
-
-          Variable for question should go here <input type="text" ng-model="answer"><br>
-          <br>
-          User Answer: {{answer}}<br>
-
-        </div>
-
-        
-
-      </div>
-
-      <script>
-        // display answer back
-        function personController($scope) {
-          $scope.answer= "John";
-        }
-      </script>
-
-    </div><!-- /.container -->
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -98,6 +39,18 @@
     <script src="assets/js/docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <script src="assets/js/ie10-viewport-bug-workaround.js"></script> -->
+
+    <!-- My JavaScript -->
+    <script src="js/spa.js"      ></script>
+    <script src="js/spa.shell.js"></script>
+
+    <script>
+      $(function () { spa.initModule( $('#spa') ); });
+    </script>
+
+  </head>
+  <body>
+    <div id="spa"></div>    
   </body>
 </html>
 
